@@ -1,0 +1,23 @@
+settings:
+  default_max_articles_per_run: 5
+  request_timeout_seconds: 20
+  user_agent: "Mozilla/5.0 article-monitor-bot/1.0"
+  llm_provider: "openai"
+  llm_model: "gpt-4o-mini"
+  output_timezone: "America/Los_Angeles"
+  minimum_article_characters: 500
+
+websites:
+  - name: "AdExchanger"
+    key: "adexchanger"
+    base_url: "https://www.adexchanger.com"
+    output_folder: "outputs/adexchanger"
+    sections:
+      - name: "CTV Roundup"
+        key: "ctv-roundup"
+        url: "https://www.adexchanger.com/ctv-roundup/"
+        max_articles_per_run: 5
+      - name: "CTV"
+        key: "ctv"
+        url: "https://www.adexchanger.com/ctv/"
+        max_articles_per_run: 5

@@ -383,8 +383,9 @@ The summarizer should produce structured content with these sections:
 2. Problem / Workflow Challenge
 3. Solution / Key Development
 4. Companies Mentioned
-5. Why This Matters for My Work
-6. Topic Tags
+5. Key People Mentioned
+6. Why This Matters for My Work
+7. Topic Tags
 
 The "Why This Matters for My Work" section should be written from the perspective of a principal architect working in an SSP/programmatic advertising company, especially around CTV, identity, privacy, auctions, publisher monetization, Prebid, clean rooms, retail media, and ad tech architecture.
 
@@ -413,6 +414,8 @@ Return only Markdown with these exact headings:
 
 ## Companies Mentioned
 
+## Key People Mentioned
+
 ## Why This Matters for My Work
 
 ## Topic Tags
@@ -426,6 +429,7 @@ Article text:
 ```
 
 Companies should be returned as a bullet list. Topic tags should also be returned as a bullet list.
+Key people should be returned as a bullet list of the most relevant named individuals mentioned in the article, with short role/context when available so they are useful for follow-up on LinkedIn.
 
 ---
 
@@ -475,6 +479,11 @@ Markdown file format:
 
 - Company A
 - Company B
+
+## Key People Mentioned
+
+- Jane Smith, CEO, Example Co.
+- John Doe, Head of Product, Example Co.
 
 ## Why This Matters for My Work
 
@@ -538,6 +547,7 @@ Digest format:
 1. [Article Title](../../outputs/adexchanger/streaming/0001_article-title.md)
    - URL: https://example.com/article
    - Publication Date: 2026-07-08
+   - Key People: Jane Smith, John Doe
    - Topic Tags: CTV, Programmatic, SSP
 
 ## Key Themes
@@ -845,4 +855,3 @@ Avoid putting all logic in `run.py`.
 Keep website-specific hacks isolated so the generic pipeline remains clean.
 
 Include comments where behavior may not be obvious.
-

@@ -1,0 +1,513 @@
+2026-07-08 13:25:19,529 INFO Article Monitor started: 2026-07-08T13:25:19.529290-07:00
+2026-07-08 13:25:19,529 INFO Loaded config: config/websites.yaml
+2026-07-08 13:25:19,530 INFO Loaded state files from state/
+2026-07-08 13:25:19,530 INFO 
+2026-07-08 13:25:19,530 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 13:25:19,536 ERROR Discovery failed for AdExchanger / CTV Roundup: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 98, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:25:19,540 INFO 
+2026-07-08 13:25:19,540 INFO Processing AdExchanger / CTV
+2026-07-08 13:25:19,541 ERROR Discovery failed for AdExchanger / CTV: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 98, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:25:19,542 INFO State updated successfully
+2026-07-08 13:25:19,542 INFO Run completed: 0 articles processed, 2 failed
+2026-07-08 13:25:19,542 INFO 
+2026-07-08 13:25:19,542 INFO Review changes with:
+2026-07-08 13:25:19,543 INFO   git status
+2026-07-08 13:25:19,543 INFO   git diff
+2026-07-08 13:25:48,230 INFO Article Monitor started: 2026-07-08T13:25:48.230349-07:00
+2026-07-08 13:25:48,231 INFO Loaded config: config/websites.yaml
+2026-07-08 13:25:48,231 INFO Loaded state files from state/
+2026-07-08 13:25:48,231 INFO 
+2026-07-08 13:25:48,231 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 13:25:48,237 ERROR Discovery failed for AdExchanger / CTV Roundup: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 99, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:25:48,241 INFO 
+2026-07-08 13:25:48,241 INFO Processing AdExchanger / CTV
+2026-07-08 13:25:48,242 ERROR Discovery failed for AdExchanger / CTV: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 99, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:25:48,243 INFO Dry run completed without writing outputs or state
+2026-07-08 13:25:48,243 INFO Run completed: 0 articles processed, 2 failed
+2026-07-08 13:25:48,243 INFO 
+2026-07-08 13:25:48,243 INFO Review changes with:
+2026-07-08 13:25:48,244 INFO   git status
+2026-07-08 13:25:48,244 INFO   git diff
+2026-07-08 13:47:38,968 INFO Article Monitor started: 2026-07-08T13:47:38.967682-07:00
+2026-07-08 13:47:38,969 INFO Loaded config: config/websites.yaml
+2026-07-08 13:47:38,969 INFO Loaded state files from state/
+2026-07-08 13:47:39,007 INFO 
+2026-07-08 13:47:39,008 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 13:47:39,010 ERROR Discovery failed for AdExchanger / CTV Roundup: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 102, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv-roundup/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:47:39,014 INFO 
+2026-07-08 13:47:39,015 INFO Processing AdExchanger / CTV
+2026-07-08 13:47:39,015 ERROR Discovery failed for AdExchanger / CTV: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/run.py", line 102, in main
+    discovered_urls = discover_article_urls(section, website, settings, session, logger)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshadmane/Desktop/GitHub/daily-article-digest/scripts/discover_articles.py", line 27, in discover_article_urls
+    response = session.get(
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /ctv/ (Caused by NameResolutionError("HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-07-08 13:47:39,017 INFO State updated successfully
+2026-07-08 13:47:39,017 INFO Run completed: 0 articles processed, 2 failed
+2026-07-08 13:47:39,017 INFO 
+2026-07-08 13:47:39,017 INFO Review changes with:
+2026-07-08 13:47:39,017 INFO   git status
+2026-07-08 13:47:39,018 INFO   git diff
+2026-07-08 13:47:44,037 INFO Article Monitor started: 2026-07-08T13:47:44.037169-07:00
+2026-07-08 13:47:44,037 INFO Loaded config: config/websites.yaml
+2026-07-08 13:47:44,037 INFO Loaded state files from state/
+2026-07-08 13:47:44,067 INFO 
+2026-07-08 13:47:44,067 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 13:47:44,770 INFO Discovered 45 candidate article URLs for AdExchanger / CTV Roundup
+2026-07-08 13:47:44,770 INFO Skipped 0 already visited URLs
+2026-07-08 13:47:44,771 INFO Selected 1 new articles
+2026-07-08 13:47:45,074 INFO [1/1] Extracting: Data Privacy | AdExchanger
+2026-07-08 13:47:55,714 INFO Saved: outputs/adexchanger/ctv-roundup/0001_data-privacy-adexchanger.md
+2026-07-08 13:47:55,715 INFO 
+2026-07-08 13:47:55,715 INFO Processing AdExchanger / CTV
+2026-07-08 13:47:55,772 INFO Discovered 51 candidate article URLs for AdExchanger / CTV
+2026-07-08 13:47:55,772 INFO Skipped 1 already visited URLs
+2026-07-08 13:47:55,772 INFO Selected 1 new articles
+2026-07-08 13:47:56,002 INFO [1/1] Extracting: Artificial Intelligence | AdExchanger
+2026-07-08 13:48:20,238 INFO Saved: outputs/adexchanger/ctv/0001_artificial-intelligence-adexchanger.md
+2026-07-08 13:48:20,239 INFO Daily digest updated: digests/daily/2026-07-08.md
+2026-07-08 13:48:20,240 INFO State updated successfully
+2026-07-08 13:48:20,240 INFO Run completed: 2 articles processed, 0 failed
+2026-07-08 13:48:20,240 INFO 
+2026-07-08 13:48:20,240 INFO Review changes with:
+2026-07-08 13:48:20,240 INFO   git status
+2026-07-08 13:48:20,240 INFO   git diff
+2026-07-08 13:55:51,397 INFO Article Monitor started: 2026-07-08T13:55:51.396758-07:00
+2026-07-08 13:55:51,397 INFO Loaded config: config/websites.yaml
+2026-07-08 13:55:51,397 INFO Loaded state files from state/
+2026-07-08 13:55:51,434 INFO 
+2026-07-08 13:55:51,434 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 13:55:51,562 INFO Discovered 38 candidate article URLs for AdExchanger / CTV Roundup
+2026-07-08 13:55:51,562 INFO Skipped 0 already visited URLs
+2026-07-08 13:55:51,562 INFO Selected 1 new articles
+2026-07-08 13:55:51,954 INFO [1/1] Extracting: Programmatic I/O 2026 New York | AdExchanger
+2026-07-08 13:56:10,024 INFO Saved: outputs/adexchanger/ctv-roundup/0001_programmatic-io-2026-new-york-adexchanger.md
+2026-07-08 13:56:10,024 INFO 
+2026-07-08 13:56:10,024 INFO Processing AdExchanger / CTV
+2026-07-08 13:56:10,069 INFO Discovered 44 candidate article URLs for AdExchanger / CTV
+2026-07-08 13:56:10,069 INFO Skipped 1 already visited URLs
+2026-07-08 13:56:10,069 INFO Selected 1 new articles
+2026-07-08 13:56:10,580 INFO [1/1] Extracting: ADX Top Women in Media & Ad Tech 2026 | AdExchanger
+2026-07-08 13:56:22,648 INFO Saved: outputs/adexchanger/ctv/0001_adx-top-women-in-media-ad-tech-2026-adexchanger.md
+2026-07-08 13:56:22,649 INFO Daily digest updated: digests/daily/2026-07-08.md
+2026-07-08 13:56:22,650 INFO State updated successfully
+2026-07-08 13:56:22,650 INFO Run completed: 2 articles processed, 0 failed
+2026-07-08 13:56:22,650 INFO 
+2026-07-08 13:56:22,650 INFO Review changes with:
+2026-07-08 13:56:22,650 INFO   git status
+2026-07-08 13:56:22,650 INFO   git diff
+2026-07-08 14:16:16,618 INFO Article Monitor started: 2026-07-08T14:16:16.617621-07:00
+2026-07-08 14:16:16,619 INFO Loaded config: config/websites.yaml
+2026-07-08 14:16:16,619 INFO Loaded state files from state/
+2026-07-08 14:16:16,656 INFO 
+2026-07-08 14:16:16,656 INFO Processing AdExchanger / CTV Roundup
+2026-07-08 14:16:16,792 INFO Discovered 35 candidate article URLs for AdExchanger / CTV Roundup
+2026-07-08 14:16:16,792 INFO Skipped 0 already visited URLs
+2026-07-08 14:16:16,792 INFO Selected 1 new articles
+2026-07-08 14:16:17,685 INFO [1/1] Extracting: Dynamically Inserted Billboards In TV Content: Groundbreaking Or Distracting? | AdExchanger
+2026-07-08 14:16:28,798 INFO Saved: outputs/adexchanger/ctv-roundup/0001_dynamically-inserted-billboards-in-tv-content-groundbreaking-or-distracting-adex.md
+2026-07-08 14:16:28,798 INFO 
+2026-07-08 14:16:28,798 INFO Processing AdExchanger / CTV
+2026-07-08 14:16:28,861 INFO Discovered 41 candidate article URLs for AdExchanger / CTV
+2026-07-08 14:16:28,862 INFO Skipped 0 already visited URLs
+2026-07-08 14:16:28,862 INFO Selected 1 new articles
+2026-07-08 14:16:29,283 INFO [1/1] Extracting: Walmart Connect and Magnite on the Convergence of Retail Media, CTV, and Programmatic | Cannes 2026 | AdExchanger
+2026-07-08 14:16:38,244 INFO Saved: outputs/adexchanger/ctv/0001_walmart-connect-and-magnite-on-the-convergence-of-retail-media-ctv-and-programma.md
+2026-07-08 14:16:38,245 INFO Daily digest updated: digests/daily/2026-07-08.md
+2026-07-08 14:16:38,245 INFO State updated successfully
+2026-07-08 14:16:38,246 INFO Run completed: 2 articles processed, 0 failed
+2026-07-08 14:16:38,246 INFO 
+2026-07-08 14:16:38,246 INFO Review changes with:
+2026-07-08 14:16:38,246 INFO   git status
+2026-07-08 14:16:38,246 INFO   git diff

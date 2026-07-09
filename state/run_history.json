@@ -1,0 +1,13 @@
+[
+  {
+    "run_id": "2026-07-08T14-16-16.617621-07-00",
+    "started_at": "2026-07-08T14:16:16.617621-07:00",
+    "completed_at": "2026-07-08T14:16:38.245405-07:00",
+    "websites_processed": 1,
+    "sections_processed": 2,
+    "new_articles_found": 2,
+    "articles_processed": 2,
+    "articles_failed": 0,
+    "errors": []
+  }
+]

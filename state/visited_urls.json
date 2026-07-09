@@ -1,0 +1,20 @@
+{
+  "adexchanger": {
+    "ctv-roundup": [
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/dynamically-inserted-billboards-in-tv-content-groundbreaking-or-distracting",
+        "title": "Dynamically Inserted Billboards In TV Content: Groundbreaking Or Distracting? | AdExchanger",
+        "processed_at": "2026-07-08T14:16:16.617621-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0001_dynamically-inserted-billboards-in-tv-content-groundbreaking-or-distracting-adex.md"
+      }
+    ],
+    "ctv": [
+      {
+        "url": "https://www.adexchanger.com/content-studio/walmart-connect-and-magnite-on-the-convergence-of-retail-media-ctv-and-programmatic-cannes-2026",
+        "title": "Walmart Connect and Magnite on the Convergence of Retail Media, CTV, and Programmatic | Cannes 2026 | AdExchanger",
+        "processed_at": "2026-07-08T14:16:16.617621-07:00",
+        "output_file": "outputs/adexchanger/ctv/0001_walmart-connect-and-magnite-on-the-convergence-of-retail-media-ctv-and-programma.md"
+      }
+    ]
+  }
+}
