@@ -126,6 +126,7 @@ python scripts/run.py --max-articles 1
 - Stores a summary entry for each execution
 
 State writes are atomic. Missing state files are initialized automatically. Corrupt state files stop the run with a clear error instead of being overwritten.
+Log files under `logs/` are local-only and are not meant to be committed.
 
 ## Output Layout
 
@@ -159,7 +160,7 @@ git pull
 python scripts/run.py
 git status
 git diff
-git add outputs/ digests/ state/ logs/
+git add outputs/ digests/ state/
 git commit -m "Add article summaries for YYYY-MM-DD"
 git push
 ```

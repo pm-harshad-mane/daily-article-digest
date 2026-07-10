@@ -734,7 +734,7 @@ git pull
 python scripts/run.py
 git status
 git diff
-git add outputs/ digests/ state/ logs/
+git add outputs/ digests/ state/
 git commit -m "Add article summaries for YYYY-MM-DD"
 git push
 ```

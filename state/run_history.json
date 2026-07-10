@@ -9,5 +9,16 @@
     "articles_processed": 2,
     "articles_failed": 0,
     "errors": []
+  },
+  {
+    "run_id": "2026-07-09T19-03-05.244616-07-00",
+    "started_at": "2026-07-09T19:03:05.244616-07:00",
+    "completed_at": "2026-07-09T19:04:53.258914-07:00",
+    "websites_processed": 1,
+    "sections_processed": 2,
+    "new_articles_found": 10,
+    "articles_processed": 10,
+    "articles_failed": 0,
+    "errors": []
   }
 ]

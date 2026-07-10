@@ -6,14 +6,68 @@
         "title": "Dynamically Inserted Billboards In TV Content: Groundbreaking Or Distracting? | AdExchanger",
         "processed_at": "2026-07-08T14:16:16.617621-07:00",
         "output_file": "outputs/adexchanger/ctv-roundup/0001_dynamically-inserted-billboards-in-tv-content-groundbreaking-or-distracting-adex.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/how-ai-can-enhance-content-without-generating-it",
+        "title": "How AI Can Enhance Content Without Generating It | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0002_how-ai-can-enhance-content-without-generating-it-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/inside-the-trade-desks-pitch-for-ventura-tv-os",
+        "title": "Inside The Trade Desk’s Pitch For Ventura TV OS | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0003_inside-the-trade-desks-pitch-for-ventura-tv-os-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/better-attribution-makes-live-sports-a-performance-play",
+        "title": "Better Attribution Makes Live Sports A Performance Play | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0004_better-attribution-makes-live-sports-a-performance-play-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/fast-content-isnt-always-premium-but-thats-where-tv-ad-innovation-is-happening",
+        "title": "FAST Content Isn’t Always ‘Premium,’ But That’s Where TV Ad Innovation Is Happening | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0005_fast-content-isnt-always-premium-but-thats-where-tv-ad-innovation-is-happening-a.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/ai-is-redefining-premium-content-which-may-not-be-a-good-thing",
+        "title": "AI Is Redefining Premium Content – Which May Not Be A Good Thing | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0006_ai-is-redefining-premium-content-which-may-not-be-a-good-thing-adexchanger.md"
       }
     ],
     "ctv": [
       {
-        "url": "https://www.adexchanger.com/content-studio/walmart-connect-and-magnite-on-the-convergence-of-retail-media-ctv-and-programmatic-cannes-2026",
-        "title": "Walmart Connect and Magnite on the Convergence of Retail Media, CTV, and Programmatic | Cannes 2026 | AdExchanger",
-        "processed_at": "2026-07-08T14:16:16.617621-07:00",
-        "output_file": "outputs/adexchanger/ctv/0001_walmart-connect-and-magnite-on-the-convergence-of-retail-media-ctv-and-programma.md"
+        "url": "https://www.adexchanger.com/tv/the-iab-wants-to-get-ad-tech-speaking-the-same-language-about-digital-video",
+        "title": "The IAB Wants To Get Ad Tech Speaking The Same Language About Digital Video | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv/0002_the-iab-wants-to-get-ad-tech-speaking-the-same-language-about-digital-video-adex.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/ctv-buyers-are-getting-the-show-level-performance-optimization-theyve-always-wanted",
+        "title": "CTV Buyers Are Finally Getting Show-Level Performance Optimization",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv/0003_ctv-buyers-are-finally-getting-show-level-performance-optimization.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/streaming/advertisers-await-programmatic-pause-ads",
+        "title": "Advertisers Await Programmatic Pause Ads | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv/0004_advertisers-await-programmatic-pause-ads-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/on-tv-and-video/the-world-cup-is-a-live-outcomes-test-for-programmatic-live-sports",
+        "title": "The World Cup Is A Live Outcomes Test For Programmatic Live Sports",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv/0005_the-world-cup-is-a-live-outcomes-test-for-programmatic-live-sports.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/why-media-mergers-and-spin-offs-dont-always-keep-their-promises",
+        "title": "Why Media Mergers And Spin-Offs Don’t Always Keep Their Promises | AdExchanger",
+        "processed_at": "2026-07-09T19:03:05.244616-07:00",
+        "output_file": "outputs/adexchanger/ctv/0006_why-media-mergers-and-spin-offs-dont-always-keep-their-promises-adexchanger.md"
       }
     ]
   }
