@@ -20,5 +20,29 @@
     "articles_processed": 10,
     "articles_failed": 0,
     "errors": []
+  },
+  {
+    "run_id": "2026-07-14T13-34-08.322270-07-00",
+    "started_at": "2026-07-14T13:34:08.322270-07:00",
+    "completed_at": "2026-07-14T13:34:08.363804-07:00",
+    "websites_processed": 1,
+    "sections_processed": 1,
+    "new_articles_found": 0,
+    "articles_processed": 0,
+    "articles_failed": 1,
+    "errors": [
+      "Discovery failed for adexchanger/tv: HTTPSConnectionPool(host='www.adexchanger.com', port=443): Max retries exceeded with url: /tv/ (Caused by NameResolutionError(\"HTTPSConnection(host='www.adexchanger.com', port=443): Failed to resolve 'www.adexchanger.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    ]
+  },
+  {
+    "run_id": "2026-07-14T13-34-11.882995-07-00",
+    "started_at": "2026-07-14T13:34:11.882995-07:00",
+    "completed_at": "2026-07-14T13:36:07.636675-07:00",
+    "websites_processed": 1,
+    "sections_processed": 1,
+    "new_articles_found": 10,
+    "articles_processed": 10,
+    "articles_failed": 0,
+    "errors": []
   }
 ]

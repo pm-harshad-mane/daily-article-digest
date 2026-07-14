@@ -21,3 +21,7 @@ websites:
         key: "ctv"
         url: "https://www.adexchanger.com/ctv/"
         max_articles_per_run: 5
+      - name: "TV"
+        key: "tv"
+        url: "https://www.adexchanger.com/tv/"
+        max_articles_per_run: 5

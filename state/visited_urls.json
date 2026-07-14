@@ -69,6 +69,68 @@
         "processed_at": "2026-07-09T19:03:05.244616-07:00",
         "output_file": "outputs/adexchanger/ctv/0006_why-media-mergers-and-spin-offs-dont-always-keep-their-promises-adexchanger.md"
       }
+    ],
+    "tv": [
+      {
+        "url": "https://www.adexchanger.com/marketers/this-k-beauty-brand-is-collapsing-the-marketing-funnel-to-grow-its-us-customer-base",
+        "title": "This K-Beauty Brand Is Collapsing The Marketing Funnel To Grow Its US Customer Base | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0001_this-k-beauty-brand-is-collapsing-the-marketing-funnel-to-grow-its-us-customer-b.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/linknyc-kiosks-have-started-airing-world-cup-games-tv-ads-and-all",
+        "title": "LinkNYC Kiosks Have Started Airing World Cup Games – TV Ads And All | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0002_linknyc-kiosks-have-started-airing-world-cup-games-tv-ads-and-all-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/advertisers-say-they-need-more-data-from-netflix",
+        "title": "Advertisers Say They Need More Data From Netflix | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0003_advertisers-say-they-need-more-data-from-netflix-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/walmart-buys-vibe-co-to-woo-smbs-to-streaming",
+        "title": "Walmart Buys Vibe.co To Woo SMBs To Streaming | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0004_walmart-buys-vibeco-to-woo-smbs-to-streaming-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/fire-tv-makes-a-play-for-its-share-of-home-screen-ad-dollars",
+        "title": "Fire TV Makes A Play For Its Share Of Home Screen Ad Dollars | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0005_fire-tv-makes-a-play-for-its-share-of-home-screen-ad-dollars-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/omnicom-can-now-measure-ad-frequency-across-multiple-ctv-platforms",
+        "title": "Omnicom Can Now Measure Ad Frequency Across Multiple CTV Platforms",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0006_omnicom-can-now-measure-ad-frequency-across-multiple-ctv-platforms.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/magnite-adds-a-data-quality-layer-to-its-ctv-inventory",
+        "title": "Magnite Adds A Data-Quality Layer To Its CTV Inventory | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0007_magnite-adds-a-data-quality-layer-to-its-ctv-inventory-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/papa-johns-can-predict-when-your-fridge-is-empty",
+        "title": "Papa Johns Can Predict When Your Fridge Is Empty | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0008_papa-johns-can-predict-when-your-fridge-is-empty-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/fox-announces-plans-to-acquire-roku-for-22-billion",
+        "title": "Fox Announces Plans To Acquire Roku For $22 Billion | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0009_fox-announces-plans-to-acquire-roku-for-22-billion-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/tv/how-degree-is-positioning-itself-for-the-world-cup",
+        "title": "How Degree Is Positioning Itself For The World Cup | AdExchanger",
+        "processed_at": "2026-07-14T13:34:11.882995-07:00",
+        "output_file": "outputs/adexchanger/tv/0010_how-degree-is-positioning-itself-for-the-world-cup-adexchanger.md"
+      }
     ]
   }
 }

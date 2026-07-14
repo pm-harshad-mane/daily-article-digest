@@ -10,6 +10,10 @@ EXCLUDED_PATTERNS = (
     "/tag/",
     "/author/",
     "/category/",
+    "/content-studio/",
+    "/daily-news-roundup/",
+    "/data-driven-thinking/",
+    "/go/",
     "/page/",
     "/about",
     "/contact",
@@ -82,7 +86,19 @@ def looks_like_article_url(url: str, base_url: str) -> bool:
         return False
 
     first_segment = parts[0].lower()
-    if first_segment in {"tag", "author", "category", "topic", "topics", "news", "latest"}:
+    if first_segment in {
+        "tag",
+        "author",
+        "category",
+        "topic",
+        "topics",
+        "news",
+        "latest",
+        "content-studio",
+        "daily-news-roundup",
+        "data-driven-thinking",
+        "go",
+    }:
         return False
 
     last_segment = parts[-1].lower()
