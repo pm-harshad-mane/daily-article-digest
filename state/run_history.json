@@ -44,5 +44,27 @@
     "articles_processed": 10,
     "articles_failed": 0,
     "errors": []
+  },
+  {
+    "run_id": "2026-07-14T13-52-56.560696-07-00",
+    "started_at": "2026-07-14T13:52:56.560696-07:00",
+    "completed_at": "2026-07-14T13:53:56.657180-07:00",
+    "websites_processed": 1,
+    "sections_processed": 1,
+    "new_articles_found": 5,
+    "articles_processed": 5,
+    "articles_failed": 0,
+    "errors": []
+  },
+  {
+    "run_id": "2026-07-14T13-54-04.541763-07-00",
+    "started_at": "2026-07-14T13:54:04.541763-07:00",
+    "completed_at": "2026-07-14T13:55:05.566220-07:00",
+    "websites_processed": 1,
+    "sections_processed": 1,
+    "new_articles_found": 5,
+    "articles_processed": 5,
+    "articles_failed": 0,
+    "errors": []
   }
 ]

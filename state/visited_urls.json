@@ -36,6 +36,36 @@
         "title": "AI Is Redefining Premium Content – Which May Not Be A Good Thing | AdExchanger",
         "processed_at": "2026-07-09T19:03:05.244616-07:00",
         "output_file": "outputs/adexchanger/ctv-roundup/0006_ai-is-redefining-premium-content-which-may-not-be-a-good-thing-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/lets-be-upfront-about-performance",
+        "title": "Let’s Be Upfront About Performance | AdExchanger",
+        "processed_at": "2026-07-14T13:54:04.541763-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0007_lets-be-upfront-about-performance-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/what-heated-rivalry-reveals-about-lgbtq-media-and-marketing",
+        "title": "What ‘Heated Rivalry’ Reveals About LGBTQ+ Media And Marketing | AdExchanger",
+        "processed_at": "2026-07-14T13:54:04.541763-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0008_what-heated-rivalry-reveals-about-lgbtq-media-and-marketing-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/streaming-platforms-are-embracing-vertical-video-but-at-this-point-is-it-worth-it",
+        "title": "Streaming Platforms Are Embracing Vertical Video. But At This Point, Is It Worth It? | AdExchanger",
+        "processed_at": "2026-07-14T13:54:04.541763-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0009_streaming-platforms-are-embracing-vertical-video-but-at-this-point-is-it-worth-i.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/hot-take-youtube-shouldnt-rely-on-creators-to-convince-brands-its-tv",
+        "title": "Hot Take: YouTube Shouldn’t Rely On Creators To Convince Brands It’s TV | AdExchanger",
+        "processed_at": "2026-07-14T13:54:04.541763-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0010_hot-take-youtube-shouldnt-rely-on-creators-to-convince-brands-its-tv-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/ctv-roundup/dan-aversano-is-back-at-datafuelx-and-aiming-for-continued-growth",
+        "title": "Dan Aversano Is Back At DatafuelX And Aiming For Continued Growth | AdExchanger",
+        "processed_at": "2026-07-14T13:54:04.541763-07:00",
+        "output_file": "outputs/adexchanger/ctv-roundup/0011_dan-aversano-is-back-at-datafuelx-and-aiming-for-continued-growth-adexchanger.md"
       }
     ],
     "ctv": [
@@ -68,6 +98,36 @@
         "title": "Why Media Mergers And Spin-Offs Don’t Always Keep Their Promises | AdExchanger",
         "processed_at": "2026-07-09T19:03:05.244616-07:00",
         "output_file": "outputs/adexchanger/ctv/0006_why-media-mergers-and-spin-offs-dont-always-keep-their-promises-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/inside-the-stack/tatari-cro-andy-schonfeld-says-programmatic-is-a-tool-not-a-tv-strategy",
+        "title": "Tatari CRO Andy Schonfeld Says Programmatic Is a Tool, Not a TV Strategy | AdExchanger",
+        "processed_at": "2026-07-14T13:52:56.560696-07:00",
+        "output_file": "outputs/adexchanger/ctv/0007_tatari-cro-andy-schonfeld-says-programmatic-is-a-tool-not-a-tv-strategy-adexchan.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/on-tv-and-video/foxs-roku-deal-signals-the-next-phase-of-television",
+        "title": "Fox’s Roku Deal Signals The Next Phase Of Television | AdExchanger",
+        "processed_at": "2026-07-14T13:52:56.560696-07:00",
+        "output_file": "outputs/adexchanger/ctv/0008_foxs-roku-deal-signals-the-next-phase-of-television-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/the-big-story/mergers-and-operating-systems-are-reshaping-tv-ads",
+        "title": "Mergers And Operating Systems Are Reshaping TV Ads | AdExchanger",
+        "processed_at": "2026-07-14T13:52:56.560696-07:00",
+        "output_file": "outputs/adexchanger/ctv/0009_mergers-and-operating-systems-are-reshaping-tv-ads-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/audio/what-platforms-say-will-bring-bigger-ad-budgets-to-digital-audio",
+        "title": "What Platforms Say Will Bring Bigger Ad Budgets To Digital Audio | AdExchanger",
+        "processed_at": "2026-07-14T13:52:56.560696-07:00",
+        "output_file": "outputs/adexchanger/ctv/0010_what-platforms-say-will-bring-bigger-ad-budgets-to-digital-audio-adexchanger.md"
+      },
+      {
+        "url": "https://www.adexchanger.com/the-big-story/programmatic-tv-home-screens-and-gaming-ads-for-kids",
+        "title": "Programmatic TV Home Screens And Gaming Ads For Kids | AdExchanger",
+        "processed_at": "2026-07-14T13:52:56.560696-07:00",
+        "output_file": "outputs/adexchanger/ctv/0011_programmatic-tv-home-screens-and-gaming-ads-for-kids-adexchanger.md"
       }
     ],
     "tv": [
